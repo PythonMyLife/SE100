@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/tween.js@16.3.4"></script>
+  <script src="https://cdn.bootcss.com/vue/2.2.3/vue.min.js"></script>
+  <meta charset="utf-8">
+  <title>学积分计算</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="external nofollow" />
+</head>
+<body>
+ 
+  <div id="app" class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>课程编号</th>
+          <th>课程名字</th>
+          <th>课程学分</th>
+          <th>课程得分</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(item , index) in message">
+          <td @click="jia(index)">{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.credit}}</td>
+          <td>{{item.score}}</td>
+          <td>
+            <button type="button" class="btn btn-danger" @click="remove(index)">移除</button>
+          </td>
+        </tr>
+        <tr>
+          <td>总学积分  
+          </td>
+          <td>
+            {{animatenum | filtermoney}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+ 
+    <p v-if="message.length===0">请添加课程</p>
+  
+  <div class="col-md-6 col-md-offset-3">
+  <div id="add-book">
+    <legend>添加课程</legend>
+      <div class="form-group">
+        <label>课程编号</label>
+        <input type="text" class='form-control' v-model="item.id">
+      </div>
+      <div class="form-group">
+        <label>课程名称</label>
+        <input type="text" class='form-control' v-model="item.name">
+      </div>
+      <div class="form-group">
+        <label>课程学分</label>
+        <input type="text" class='form-control' v-model="item.credit">
+      </div>
+      <div class="form-group">
+        <label>课程得分</label>
+        <input type="text" class='form-control' v-model="item.score">
+      </div>
+      <button class="btn btn-danger" @click="addcourse()">添加</button>
+  </div>
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
