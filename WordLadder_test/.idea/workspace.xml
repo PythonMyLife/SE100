@@ -16,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/WordLadder/WorldLadder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+              <caret line="119" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/WordLadder/WorldLadderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="82" column="57" lean-forward="true" selection-start-line="82" selection-start-column="57" selection-end-line="82" selection-end-column="57" />
+            <state relative-caret-position="72">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -57,7 +57,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
@@ -103,7 +103,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552116171450" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552116928686" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../WordLadder" />
@@ -234,14 +234,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552110317788</updated>
-      <workItem from="1552110323990" duration="5702000" />
+      <workItem from="1552110323990" duration="6366000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WorldLadderTest_readFile - 2019.03.09 at 14h 12m 19s.xml">
-      <configuration name="WorldLadderTest.readFile" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WorldLadderTest_readFile - 2019.03.09 at 14h 19m 37s.xml">
       <configuration name="WorldLadderTest.readFile" configurationId="JUnit" />
     </history-entry>
@@ -269,13 +266,15 @@
     <history-entry file="WorldLadderTest_word_ladder - 2019.03.09 at 15h 19m 49s.xml">
       <configuration name="WorldLadderTest.word_ladder" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="WorldLadderTest - 2019.03.09 at 15h 20m 40s.xml">
+      <configuration name="WorldLadderTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5702000" />
+    <option name="totallyTimeSpent" value="6366000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -317,15 +316,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/WordLadder/WorldLadderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="82" column="57" lean-forward="true" selection-start-line="82" selection-start-column="57" selection-end-line="82" selection-end-column="57" />
+        <state relative-caret-position="72">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WordLadder/WorldLadder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+          <caret line="119" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
         </state>
       </provider>
     </entry>
