@@ -14,9 +14,8 @@ public class Greeting {
     String begin;
     String end;
 
-    public void readFile(){
-        String pathname = "dictionary.txt";
-
+    public void readFile(String pathname){
+        dict.clear();
         try (FileReader reader = new FileReader(pathname);
              BufferedReader br = new BufferedReader(reader) // 建立一个对象，它把文件内容转成计算机能读懂的语言
         ) {
@@ -80,6 +79,7 @@ public class Greeting {
 
     public String word_ladder(){
         String ladder;
+        String tmp = end;
         if(dict.contains(begin)&&dict.contains(end)&&begin.length() == end.length()){
             queue.addFirst(begin);
             dict.remove(begin);
@@ -116,6 +116,7 @@ public class Greeting {
         else{
             ladder="请保证输入的两个单词长度长度相同并都在字典中！";
         }
+        end = tmp;
         return ladder;
     }
 
@@ -123,7 +124,8 @@ public class Greeting {
         this.id = id;
         begin = str1;
         end = str2;
-        readFile();
+        String pathname = "dictionary.txt";
+        readFile(pathname);
         String wordladder = word_ladder();
         this.content = wordladder;
     }
