@@ -103,4 +103,5 @@ public class GreetingTest {
         Greeting ladder = new Greeting(1, "data", "code");
         assertEquals("code", ladder.getEnd());
     }
+
 }
