@@ -1,14 +1,15 @@
-package WordLadder;
-import java.util.concurrent.atomic.AtomicLong;
+package wordladder;
 
 import org.springframework.http.HttpHeaders;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
 @CrossOrigin("*")
 @RequestMapping(path="/wordladder")
+/**
+  @author="hzt"
+ */
 public class WordLadderController {
     static private boolean log = false;
 
@@ -17,8 +18,8 @@ public class WordLadderController {
             @RequestParam(value="str1") String str1,
             @RequestParam(value="str2") String str2)
     {
-        if(log) return new WordLadder(str1,str2).getContent();
-        else return "未登录请先登录！";
+        if(log) {return new WordLadder(str1,str2).getContent();}
+        else {return "未登录请先登录！";}
     }
 
     @RequestMapping("/login")
@@ -28,7 +29,7 @@ public class WordLadderController {
     {
         HttpHeaders headers= new HttpHeaders();
         RestTemplate restTemplate= new RestTemplate();
-        Boolean result = restTemplate.getForObject("http://auth:8083/auth?name="+name+"&&password="+password,Boolean.class);
+        Boolean result = restTemplate.getForObject("http://localhost:8083/auth?name="+name+"&&password="+password,Boolean.class);
         if(result){
             log = true;
             return true;

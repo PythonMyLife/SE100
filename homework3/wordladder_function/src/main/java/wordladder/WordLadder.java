@@ -1,4 +1,4 @@
-package WordLadder;
+package wordladder;
 import java.io.*;
 import java.util.HashSet;
 import java.util.LinkedList;
